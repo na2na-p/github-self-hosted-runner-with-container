@@ -1,4 +1,4 @@
 {
-  "hadolint.hadolintPath": "./hadolint.sh",
-  "cSpell.words": ["hadolint"]
+	"hadolint.hadolintPath": "./hadolint.sh",
+	"cSpell.words": ["hadolint", "tibdex"]
 }
