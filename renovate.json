@@ -1,0 +1,18 @@
+{
+	"extends": [
+		"config:base",
+		"group:allNonMajor",
+		":timezone(Asia/Tokyo)",
+		":prHourlyLimitNone"
+	],
+	"schedule": ["after 9am", "before 12am"],
+	"rangeStrategy": "bump",
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["major"],
+			"addLabels": ["major update"]
+		}
+	],
+	"ignoreDeps": ["tibdex/github-app-token"],
+	"prConcurrentLimit": 4
+}
