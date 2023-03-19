@@ -42,4 +42,4 @@ RUN ./bin/installdependencies.sh \
 
 USER runner
 
-ENTRYPOINT ["/run.sh"]
+ENTRYPOINT ["/runner/run.sh"]
