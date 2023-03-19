@@ -1,4 +1,4 @@
-name: Test
+name: Publish
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  image-build:
+  image-build-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
