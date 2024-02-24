@@ -3,10 +3,8 @@ FROM ubuntu:jammy-20230308
 ARG RUNNER_BASE_VERSION=2.303.0
 
 RUN apt-get update -q \
-    && apt-get install -y --no-install-recommends \ 
-			curl=7.81.0-1ubuntu1.8 \
-			ca-certificates=20211016ubuntu0.22.04.1 \
-		git=1:2.34.1-1ubuntu1.8 \
+    && apt-get install -y --no-install-recommends \
+			curl git ca-certificates \
 		&& apt-get autoremove -y \
 		&& apt-get clean -y \
 		&& rm -rf /var/lib/apt/lists/* \
