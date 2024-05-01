@@ -1,4 +1,4 @@
-FROM ubuntu:jammy-20240416
+FROM ubuntu:24.04
 
 ARG RUNNER_BASE_VERSION=2.303.0
 
